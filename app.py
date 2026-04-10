@@ -44,7 +44,7 @@ st.markdown("""
         z-index: 999 !important;
     }
     
-    /* iframe 제어: 16% 확대된 크기(116vw, 116vh)로 워터마크 마스킹 처리 및 최상단 렌더링 */
+    /* iframe 제어: 데스크톱 환경에서는 16% 전방위 확대 마스킹 처리 */
     iframe {
         height: 116vh !important;
         width: 116vw !important;
@@ -55,6 +55,18 @@ st.markdown("""
         left: -8vw !important;
         top: -8vh !important;
         z-index: 99999 !important;       /* 가장 위에 떠서 클릭 방해 최소화 */
+    }
+    
+    /* 반응형 로직: 스마트폰 등 모바일 크기(768px 이하) 감지 시 CSS 미디어 쿼리 발동 */
+    @media screen and (max-width: 768px) {
+        iframe {
+            /* 모바일 세로 모드에서는 좌우 폭이 부족하므로 가로 확대를 취소하고 100% 꽉 채웁니다. */
+            width: 100vw !important;
+            left: 0 !important;
+            /* 워터마크는 하단에 위치하므로 오브젝트 비율 왜곡 없이 세로 길이만 추가 연장해 아래로 밀어냅니다. */
+            height: 110vh !important;
+            top: 0 !important;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
