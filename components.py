@@ -65,6 +65,10 @@ def apply_global_style():
             display: none;
         }}
         
+        [data-testid="block-container"] {{
+            padding-top: 2rem !important; 
+        }}
+        
         .stApp, div, h1, h2, h3, p, span {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }}

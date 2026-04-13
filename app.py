@@ -18,7 +18,7 @@ apply_global_style()
 # ==========================================
 # [Hero Section] 최상단 대문 화면
 # ==========================================
-st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height: 10px;'></div>", unsafe_allow_html=True)
 
 st.markdown(f"""
 <div style="text-align: center;">

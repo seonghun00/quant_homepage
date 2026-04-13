@@ -51,12 +51,12 @@ SITE_CONFIG = {
     
     # << 푸터(하단 영역) >>
     "footer": {
-        "badge": "Available For Work",
-        "title": "See More On TradingView Below",
+        "badge": "Other Projects",
+        "title": "See More On TradingView Below.",
         "email": "baeseonghun@naver.com",
         "platform": "Design by seonghun",
         "copyright": "All rights reserved, ©2026",
         "blog_url": "https://kr.tradingview.com/u/baeseonghun/",
-        "btn": "Visit Blog"
+        "btn": "Visit TradingView Blog"
     }
 }
