@@ -7,7 +7,7 @@ from components import apply_global_style, render_image, render_footer
 # [중요] Streamlit에서는 set_page_config가 무조건 가장 처음 나타나야 에러가 나지 않습니다.
 st.set_page_config(
     page_title="Quant Vision Dashboard",
-    page_icon="♾️",
+    page_icon="📈",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
